@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Калькулятор стоимости товара")
+	fmt.Println("===================")
+	fmt.Println("Введите стоимость товара на сайте: ")
+	var price int
+	fmt.Scan(&price)
+	fmt.Println("Введите стоимость доставки: ")
+	var delivery int
+	fmt.Scan(&delivery)
+	fmt.Println("Введите размер скидки: ")
+	var discount int
+	fmt.Scan(&discount)
+
+	fullPrice := price + delivery - discount
+	fmt.Println("===================")
+	fmt.Println("Итого: ", fullPrice)
+}

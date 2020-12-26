@@ -3,18 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Банкомат и сдача")
+	fmt.Println("Максимальный процент")
 	fmt.Println("===================")
  	
-  fmt.Println("Введите сумму покупки")
+  fmt.Println("Введите первую ставку по депозиту")
 	var purchaseSum int
 	fmt.Scan(&purchaseSum)
 
-  fmt.Println("Введите номинал первой монеты")
+  fmt.Println("Введите вторую ставку по депозиту")
 	var firstCoin int
 	fmt.Scan(&firstCoin)
 
-  fmt.Println("Введите номинал второй монеты")
+  fmt.Println("Введите первую ставку по депозиту")
 	var secondCoin int
 	fmt.Scan(&secondCoin)
 

@@ -1,0 +1,28 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Проверяем число")
+	fmt.Println("===================")
+ 	
+  fmt.Println("Введите первое число")
+	var firstNumber int
+	fmt.Scan(&firstNumber)
+
+  fmt.Println("Введите второе число")
+	var secondNumber int
+	fmt.Scan(&secondNumber)
+
+  fmt.Println("Введите третье число")
+	var thirdNumber int
+	fmt.Scan(&thirdNumber)
+
+
+  if firstNumber > 0 || secondNumber > 0 || thirdNumber > 0 {
+    fmt.Println("Одно из чисел положительное")
+    } else  {
+      fmt.Println("Все числа отрицательные")
+        } 
+  
+}

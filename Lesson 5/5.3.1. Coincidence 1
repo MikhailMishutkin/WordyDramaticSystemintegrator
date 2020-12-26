@@ -1,0 +1,40 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Совпадение чисел")
+	fmt.Println("===================")
+ 	
+  fmt.Println("Введите первое число")
+	var firstNumber int
+	fmt.Scan(&firstNumber)
+
+  fmt.Println("Введите второе число")
+	var secondNumber int
+	fmt.Scan(&secondNumber)
+
+  fmt.Println("Введите третье число")
+	var thirdNumber int
+	fmt.Scan(&thirdNumber)
+
+  var coincidence bool
+  coincidence = false
+
+
+  if firstNumber == secondNumber {
+    coincidence = true
+    } 
+  if secondNumber == thirdNumber {
+    coincidence = true
+  }
+  if thirdNumber == firstNumber {
+    coincidence = true
+  }   
+    
+  if coincidence {
+    fmt.Println("Есть совпадающие числа")
+  } else {
+    fmt.Println("Нет совпадений")
+  }
+}

@@ -1,0 +1,28 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Координатная плоскость")
+	fmt.Println("===================")
+ 	
+  fmt.Println("Введите координату по оси абсцисс")
+	var valueX int
+	fmt.Scan(&valueX)
+
+  fmt.Println("Введите координату по оси ординат")
+	var valueY int
+	fmt.Scan(&valueY)
+
+  
+  if valueX > 0 && valueY > 0 {
+    fmt.Println("Координата в первой четверти")
+    } else if valueX > 0 && valueY < 0 {
+      fmt.Println("Координата во второй четверти")
+        } else if valueX < 0 && valueY < 0 {
+          fmt.Println("Координата в третьей четверти")
+          } else {
+    fmt.Println("Координата в четвертой четверти")
+  }
+  
+}

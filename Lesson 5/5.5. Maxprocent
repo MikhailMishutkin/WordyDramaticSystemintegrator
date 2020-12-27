@@ -7,38 +7,23 @@ func main() {
 	fmt.Println("===================")
  	
   fmt.Println("Введите первую ставку по депозиту")
-	var purchaseSum int
-	fmt.Scan(&purchaseSum)
+	var firstBet int
+	fmt.Scan(&firstBet)
 
   fmt.Println("Введите вторую ставку по депозиту")
-	var firstCoin int
-	fmt.Scan(&firstCoin)
+	var secondBet int
+	fmt.Scan(&secondBet)
 
-  fmt.Println("Введите первую ставку по депозиту")
-	var secondCoin int
-	fmt.Scan(&secondCoin)
-
-  fmt.Println("Введите номинал третьей монеты")
-	var thirdCoin int
-	fmt.Scan(&thirdCoin)
-
-  var noChange bool
-  noChange = false
+  fmt.Println("Введите третью ставку по депозиту")
+	var thirdBet int
+	fmt.Scan(&thirdBet)
 
 
-  if purchaseSum == firstCoin || purchaseSum == secondCoin || purchaseSum == thirdCoin {
-    noChange = true
-    } 
-  if purchaseSum == firstCoin + secondCoin || purchaseSum == firstCoin + thirdCoin || purchaseSum == secondCoin + thirdCoin {
-    noChange = true
-  }
-  if purchaseSum == firstCoin + secondCoin + thirdCoin {
-    noChange = true
-  }   
-    
-  if noChange {
-    fmt.Println("Можно оплатить без сдачи")
-  } else {
-    fmt.Println("Не возможно оплатить без сдачи")
-  }
-}
+    if thirdBet < firstBet && thirdBet < secondBet {
+      fmt.Println("Максимальные ставки", firstBet, secondBet)
+    } else if secondBet < firstBet && secondBet < thirdBet {
+          fmt.Println("Максимальные ставки", firstBet, thirdBet)
+    } else {
+      fmt.Println("Максимальные ставки", thirdBet, secondBet)
+    }
+   

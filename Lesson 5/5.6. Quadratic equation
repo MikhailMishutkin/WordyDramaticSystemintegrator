@@ -1,5 +1,35 @@
 package main
 
+import "fmt"
+
+func main() {
+	fmt.Println("Решаем квадратное уравнение")
+	fmt.Println("===================")
+ 	
+  fmt.Println("Введите первый коэффициент "a"")
+	var coeffA int
+	fmt.Scan(&coeffA)
+
+  fmt.Println("Введите второй коэффициент "b"")
+	var coeffB int
+	fmt.Scan(&coeffB)
+
+  fmt.Println("Введите третий коэффициент "c"")
+	var coeffC int
+	fmt.Scan(&coeffC)
+
+  D := math.Pow(coeffB) - 4 * coeffA * coeffC
+
+
+    if thirdBet < firstBet && thirdBet < secondBet {
+      fmt.Println("Максимальные ставки", firstBet, secondBet)
+    } else if secondBet < firstBet && secondBet < thirdBet {
+          fmt.Println("Максимальные ставки", firstBet, thirdBet)
+//} else {
+      fmt.Println(D)
+    }
+   package main
+
 import ("fmt"
  "math")
 
